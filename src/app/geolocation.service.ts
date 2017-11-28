@@ -30,7 +30,7 @@ export class GeolocationService {
     if(location.latitude){
       query = location.latitude +","+ location.longtitude;
     }else{
-      query = `${location.address}, ${location.city}`
+      query = `${location.address}, ${location.city}`;
     }
 
     //cek jenis smartphone dan kondisi return map yg akan digunakan
