@@ -9,10 +9,14 @@ import { DataService } from "./data.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdIconModule, MdInputModule, MdSelectModule, MdSliderModule, MdToolbarModule, MdCardModule, MdSlideToggleModule } from '@angular/material';
 import 'hammerjs';
+import { ListComponent } from './list/list.component';
+import { CoffeeComponent } from './coffee/coffee.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+    CoffeeComponent
   ],
   imports: [
     BrowserModule,
