@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { DataService } from "./data.service";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule } from '@angular/material';
+import { MdButtonModule, MdIconModule, MdInputModule, MdSelectModule, MdSliderModule, MdToolbarModule, MdCardModule, MdSlideToggleModule } from '@angular/material';
 import 'hammerjs';
 
 @NgModule({
@@ -16,7 +16,15 @@ import 'hammerjs';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdIconModule,
+    MdInputModule,
+    MdSelectModule,
+    MdSliderModule,
+    MdToolbarModule,
+    MdCardModule,
+    MdSlideToggleModule
   ],
   providers: [GeolocationService, DataService],
   bootstrap: [AppComponent]
