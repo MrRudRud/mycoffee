@@ -10,6 +10,7 @@ export class DataService {
 
   //mengambil dummy list coffee
   getList(callback){
+    //TODO: Change it with a real Web Service
     const list = [
       new Coffee("Double Espresso","Sunny Cafe", new PlaceLocation("123 market st", "san francisco")),
       new Coffee("Caramel Americano","Starcoffee", new PlaceLocation("Gran Via 34", "madrid"))
@@ -19,6 +20,7 @@ export class DataService {
 
   //menyimpan new coffee
   save(coffee, callback){
+    //TODO: Change it with a real Web Service
     callback(true);
   }
 

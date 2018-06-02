@@ -6,13 +6,17 @@ import { GeolocationService } from "./geolocation.service";
 import { AppComponent } from './app.component';
 import { DataService } from "./data.service";
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatIconModule } from '@angular/material';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [GeolocationService, DataService],
   bootstrap: [AppComponent]
