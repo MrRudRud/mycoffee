@@ -11,6 +11,13 @@ import { MdButtonModule, MdIconModule, MdInputModule, MdSelectModule, MdSliderMo
 import 'hammerjs';
 import { ListComponent } from './list/list.component';
 import { CoffeeComponent } from './coffee/coffee.component';
+import { Routes, RouterModule} from "@angular/router";
+
+const routes : Routes = [
+  { path: '', component: ListComponent },
+  { path: 'coffee', component: CoffeeComponent },
+  { path: 'coffee/:id', component: CoffeeComponent }
+]
 
 @NgModule({
   declarations: [
@@ -19,6 +26,7 @@ import { CoffeeComponent } from './coffee/coffee.component';
     CoffeeComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     BrowserAnimationsModule,
     MdButtonModule,
